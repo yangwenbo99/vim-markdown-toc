@@ -20,6 +20,8 @@ A vim 7.4+ plugin to generate table of contents for Markdown files.
 ## My modification
 
 1. Just add the function of using numbered TOC
+	1. use `g:vmt_cycle_list_item_markers = 2` for 1./ 2./ 3. (as level)
+	1. use `g:vmt_cycle_list_item_markers = 2` for 1./ 1./ 1. for some render.....(such as github)
 2. In TOC, label the headings from `1.` or `*`
 
 
