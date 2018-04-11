@@ -1,13 +1,29 @@
 # vim-markdown-toc
-
-## My modification
-Just add the function of using numbered TOC
-
 A vim 7.4+ plugin to generate table of contents for Markdown files.
 
 [中文版使用指南][7]
-
 ## Table of Contents
+<!-- vim-markdown-toc GFM -->
+
+1. [My modification](#my-modification)
+1. [Features](#features)
+1. [Installation](#installation)
+1. [Usage](#usage)
+	2. [Generate table of contents](#generate-table-of-contents)
+	2. [Update existing table of contents](#update-existing-table-of-contents)
+	2. [Remove table of contents](#remove-table-of-contents)
+1. [Options](#options)
+1. [Screenshots](#screenshots)
+1. [References](#references)
+
+<!-- vim-markdown-toc -->
+## My modification
+
+1. Just add the function of using numbered TOC
+2. In TOC, label the headings from `1.` or `*`
+
+
+
 ## Features
 ## Installation
 
