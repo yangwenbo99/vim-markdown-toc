@@ -1,39 +1,14 @@
 # vim-markdown-toc
 
+## My modification
+Just add the function of using numbered TOC
+
 A vim 7.4+ plugin to generate table of contents for Markdown files.
 
 [中文版使用指南][7]
 
 ## Table of Contents
-
-<!-- vim-markdown-toc GFM -->
-
-* [Features](#features)
-* [Installation](#installation)
-* [Usage](#usage)
-    * [Generate table of contents](#generate-table-of-contents)
-    * [Update existing table of contents](#update-existing-table-of-contents)
-    * [Remove table of contents](#remove-table-of-contents)
-* [Options](#options)
-* [Screenshots](#screenshots)
-* [References](#references)
-
-<!-- vim-markdown-toc -->
-
 ## Features
-
-* Generate table of contents for Markdown files.
-
-  Supported Markdown parsers:
-
-  - [x] GFM (GitHub Flavored Markdown)
-  - [x] GitLab
-  - [x] Redcarpet
-
-* Update existing table of contents.
-
-* Auto update existing table of contents on save.
-
 ## Installation
 
 Suggest to manage your vim plugins via [Vundle][4] so you can install it simply three steps:
@@ -146,6 +121,20 @@ The `:UpdateToc` command, which is designed to update toc manually, can only wor
 
    This renders the same according to Markdown rules, but might appeal to those who care about readability of the source.
 
+	 And if you set 
+   ```viml
+   let g:vmt_cycle_list_item_markers = 2
+   ```
+   every level will instead cycle between the valid list item markers `*`, `-` and `+`:
+
+   ```
+   1. [Level 1](#level-1)
+       2. [Level 1-1](#level-1-1)
+       2. [Level 1-2](#level-1-2)
+           3. [Level 1-2-1](#level-1-2-1)
+   1. [Level 2](level-2)
+   ```
+
 ## Screenshots
 
 * [online demo in English][5]
@@ -169,3 +158,15 @@ The `:UpdateToc` command, which is designed to update toc manually, can only wor
 [7]: http://mazhuang.org/2015/12/19/vim-markdown-toc/
 [8]: https://github.com/junegunn/vim-plug
 [9]: https://docs.gitlab.com/ee/user/markdown.html
+<!-- vim-markdown-toc GFM -->
+
+* [Installation](#installation)
+* [Usage](#usage)
+	* [Generate table of contents](#generate-table-of-contents)
+	* [Update existing table of contents](#update-existing-table-of-contents)
+	* [Remove table of contents](#remove-table-of-contents)
+* [Options](#options)
+* [Screenshots](#screenshots)
+* [References](#references)
+
+<!-- vim-markdown-toc -->

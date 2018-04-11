@@ -234,6 +234,8 @@ function! s:GenToc(markdownStyle)
 
     if g:vmt_cycle_list_item_markers == 1
         let l:listItemChars = ['*', '-', '+']
+	elseif g:vmt_cycle_list_item_markers == 2
+        let l:listItemChars = ['1.', '2.', '3.', '4.', '5.', '6.', '7.', '8.', '9.']
     endif
 
     let l:i = 0
