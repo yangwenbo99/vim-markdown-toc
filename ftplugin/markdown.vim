@@ -246,7 +246,7 @@ function! s:GenToc(markdownStyle)
     for headingLine in l:headingLines
         let l:headingName = <SID>GetHeadingName(headingLine)
         let l:headingIndents = l:levels[i] - l:minLevel
-        let l:listItemChar = l:listItemChars[(l:levels[i] + 1) % len(l:listItemChars)]
+        let l:listItemChar = l:listItemChars[l:headingIndents % len(l:listItemChars)]
         let l:headingLink = <SID>GetHeadingLink(l:headingName, a:markdownStyle)
 
         let l:heading = repeat(s:GetIndentText(), l:headingIndents)
